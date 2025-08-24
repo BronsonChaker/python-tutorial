@@ -1,6 +1,6 @@
 # Python Programming for Beginners
 
-This repository contains exercises and projects I completed while learning Python through the Udemy course "Python Programming for Beginners".
+This repository contains code I completed while learning Python through the Udemy course "Python Programming for Beginners".
 It showcases my progress as I explored Python basics, data types, operators, strings, control flow, functions, data structures, and solved various coding challenges.
 
 ## Table of Contents / Sections
