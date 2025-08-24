@@ -164,3 +164,71 @@ print(my_string.find("World"))
 #This will count the amount of times the substring is in the string variable
 print(my_string.count("World"))
 
+
+#---------------------------------------------------------#
+
+#F-String (Formatted String)
+
+name = "Bronson"
+my_num = 100
+
+#normal concatenated string
+print( "My name is " + name.upper() + "!")
+
+#formatted string
+print(f"My name is {name.upper()}!")
+
+#use f-string to print out what the variable is equal to
+print(f"{name = }")
+
+#This will print the variable up to the first 5 characters
+print(f"{my_string:.5}")
+
+#This will print the variable up to the first 7 characters
+print(f"{my_string:.7}")
+
+#This will have my_string take up 18 characters, it will add 7 spaces to end of below string, Left Justified
+print(f"{my_string:<18}")
+
+#This will have my_string take up 18 characters, it will add 7 * to end of below string, Left Justified
+print(f"{my_string:*<18}")
+
+#This will right Justify below variables and have 1) and 2) nicely formatted at the start
+print(f"1){my_string:>18} \n2){my_num:>18}")
+
+
+#Center Justify the variables in the 18 characters
+print(f"1){my_string:^18} \n2){my_num:^18}")
+
+print(f"{{Hello}}")
+
+#Below is an example of difference between concatenations and format string
+#Formatted String
+print(f"My number is: {my_num}")
+#Concatenated String
+print("my number is: " +str(my_num))
+
+#print out num with 2 floating point decimal places
+print(f"{my_num:.2f}")
+
+#print out num with 5 floating point decimal places
+print(f"{my_num:.5f}")
+
+#print large nuber with commas and 2 floating point decimal places
+my_num = 123456789
+print(f"{my_num:,.2f}")
+
+#below will print out the num variable to a percentage with 2 decimal places also printed out
+my_num = 0.756
+print(f"{my_num:.2%}")
+
+#print out num variable in different bases
+my_num = 255
+#print num to binary
+print( f"{my_num:b}")
+#print num to octal
+print(f"{my_num:o}")
+#print num to hexadecimal
+print(f"{my_num:x}")
+
+
