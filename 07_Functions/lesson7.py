@@ -111,3 +111,9 @@ for i in range(3):
 
 #Below print statement accesses variable that was instantiated inside of the above for loop.
 print(loop_var)
+
+#Function Scope & Global Scope
+
+#As functions are the only variables that are local, for/while loops and if statements locally
+#deinfed variables are able to be accessed globally. In python the only local variables that are not
+#able to be accessed are variables that are defined inside of a function.
