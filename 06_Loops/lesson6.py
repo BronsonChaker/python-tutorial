@@ -102,3 +102,16 @@ for fruit in fruits:
 
 #While Loop vs For Loop
 
+#While Loop in Linked List
+#If you do not know the amount of elements inside of the linked list, it is better to use a while loop 
+#as it will continue until a condiition has been met, in a Linked List this would be for example until node.next is null
+#if you are traversing a list.
+
+#For Loop in Linked List
+#If you knwo the amount of elemnts or length of a Linked List you can give the for loop a range in which
+#it can traverse the Linked List from start to finsih
+
+#---------------------------------------------------------------------------------#
+
+
+
