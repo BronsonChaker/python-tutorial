@@ -1,8 +1,8 @@
 #Data Structures
 
-#-----------------------------#
-
-#Lists
+#---------------------------------------------------------#
+                        #LISTS
+#---------------------------------------------------------#
 
 #Lists can contain Floats, Integers, Strings
 
@@ -118,7 +118,7 @@ my_list.sort()
 print(my_list)
 
 #---------------------------------------------------------#
-#SETS
+                        #SETS
 #---------------------------------------------------------#
 
 #In sets we can have elements from different datatypes such as Integer, Float, Boolean, and String
@@ -185,11 +185,157 @@ inter_set = my_set_1 & my_set_2
 inter_set = my_set_1.intersection(my_set_2)
 print(inter_set)
 
+#---------------------------------------------------------#
+                        #TUPLES
+#---------------------------------------------------------#
+
+#Tuples can store any data type Integer, Float, String, Boolean etc.
+#Tuples are immutable meaning the elements inside of them cannot be modified or changed once instantiated
+#Tuples have indexes just like Lists
+#Tuples are faster than lists and take up less memory butn they are immutable
+
+#Basic Tuple example
+my_tuple = (1, 2, 3, 4, 5)
+
+#Creating an empty tuple
+my_tuple = ()
+
+#If you are creating a tuple with 1 or 2 items it requires a comma to be followed by the last element
+my_tuple = (1,)
+
+#Nested Tuples
+#Tuples can be nested in one another
+nested_tuple = ((1,2,3), (3,4,5))
+
+#Printing out Nested Tuple
+print(nested_tuple)
+
+#Basic Tuple example
+my_tuple = (1, 2, 3, 4, 5, 5)
+
+#Tuple - Count
+#count() method can be used to count occurances of argument
+print(my_tuple.count(5))
+
+#Tuple - Index
+#index() is used to find a certian index of a passed in value argument inside of tuple
+print(my_tuple.index(1))
+
+#Tuple - Unpacking
+#We are able to set a tuple and unpack it using variables. 
+employee = ("John", "Engineer", 100000)
+
+name, role, salary = employee
+
+print(name)
+print(role)
+print(salary)
+
+#---------------------------------------------------------#
+                    #DICTIONARIES
+#---------------------------------------------------------#
+
+#Dictionary
+#Keys have to be unique, Values do not need to be unique
 
 
+#Basic Dictionary Declaration
+my_dict = {'key': 'value'}
+
+#Empty Dictionary Declaration
+my_dict = {}
+
+#Dictionary 
+my_dict = {
+    'name': 'Raj',
+    'role': 'Coder',
+    'salary': 120000
+}
+
+#Retrieving name from my_dict, if key does not exist error will be returned .get() method can be used
+#in lieu of this method 
+print(my_dict['name'])
+
+#Using this method to retrieve key values allows you to add an error message if it does exist
+#.get(key, error message)
+print(my_dict.get('age', 'Unknown Key'))
+
+#Override a value for a key in a dictionary
+my_dict['salary'] = 130000
+
+#print overriden value
+print(my_dict['salary'])
+
+#add a key value that does not exist inside of the dictionary
+my_dict['age'] = 30
+
+# Dictionary - Pop
+#We can utilise the pop() method to remove a key value pair from the dictionary
+#we Can also pass in an error messafe if there is no key value pair of passed in param
+my_dict.pop('age', 'Not Found')
+
+#Print out a View Object of Dictionary Keys
+print(my_dict.keys())
+
+#We can set a variable equal to the keys of a dictionary, this will set the variable equal to the
+#View Object
+all_keys = my_dict.keys()
+
+#We can set a variable equal to the values of a dictionary, this will set the variable equal to the
+#View Object
+all_values = my_dict.values()
 
 
+#We can set a variables equal to keys and values of a dictionary, this will set this the variable
+#equal to the View Object
+all_items = my_dict.items()
 
+#Dictionary - Data Types
+
+#examples of different data types and structures that can be used as values
+my_dict = {
+    'key':'value',
+    'string': 'string',
+    'integer': 1,
+    'float': 1.0,
+    'boolean': True,
+    'list' : [1, 2, 3],
+    'tuple' : (1, 2, 3),
+    'set' : {1, 2, 3},
+    'dict' : {
+        'k1': 1,
+        'k2': 2,
+        'k3': 3
+        }
+
+}
+
+#Below is an example of the data types and structures that can be used as a key insidej a dictionary
+my_dict = {
+    'key': 'value',
+    (1, 2, 3): 'value',
+    1: 'value',
+    1.0: 'value',
+    True: 'value',
+    'string': 'value'
+}
+
+#Emmployee Dictionary
+employees = {
+    'Raj': {
+        'role': 'Coder',
+        'salary': 130000
+    },
+    'Sam': {
+        'role': 'Designer',
+        'salary': 115000
+    }
+}
+
+#Below exmaple is how we update Raj salary that is stored inside of Employee Dictionary
+employees['Raj']['salary'] = 135000
+
+print(employees['Raj']['salary'])
 
 
 
