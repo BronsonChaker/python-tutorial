@@ -119,3 +119,25 @@ def find_duplicates(numbers):
 #----------------------------------#
     #Coding Exercise #48
 #----------------------------------#
+def most_common(items):
+    
+    if not items:
+        return None
+        
+    counts = {}
+    
+    for item in items:
+        if item in counts:
+            counts[item] += 1
+        else:
+            counts[item] = 1
+        
+    top_item = None
+    top_count = 0
+    
+    for item in counts:
+        if counts[item] > top_count:
+            top_item = item
+            top_count = counts[item]
+            
+    return top_item
